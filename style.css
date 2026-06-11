@@ -99,9 +99,13 @@ nav {
     padding-top: 4px;
     letter-spacing: 0.35px;
     position: relative;
-    border-bottom: 2px solid transparent;
     transition: 300ms;
     margin: 0px 24px;
+}
+
+.nav__link:hover {
+    color: #6415ff;
+    border-bottom: 2px solid #6415ff;
 }
 
 a {
@@ -202,13 +206,153 @@ HEADER / ABOUT US ↓
 
 */
 
+@media (max-width: 1280px) {
+    header .row {
+        align-items: flex-end;
+    }
+}
+
 
 header .row {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
+.row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+.container {
+    padding: 96px 0px;
+}
+
+.header_description {
+    width: 40%;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+h1 {
+    font-size: 36px;
+    color: rgb(26, 32, 44);
+    line-height: 1.25;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.header_description--para {
+   font-size: 16px;
+   margin: 32px 0px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.header_email {
+    width: 100%;
+    max-width: 448px;
+    height: 68px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header_email--input {
+    width: 100%;
+    color: rgb(36, 62, 99);
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    z-index: 1;
+    border-radius: 500px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(229, 231, 235);
+    border-image: initial;
+    padding: 20px 192px 20px 32px;
+    transition: border-color 300ms;
+}
+
+.header_email--btn {
+    z-index: 2;
+    height: calc(100% - 16px);
+    width: 160px;
+    background-color: rgb(100, 21, 255);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 16px;
+    margin: 8px;
+    border-radius: 500px;
+    border-width: medium;
+    border-style: none;
+    border-color: currentColor;
+    border-image: initial;
+    transition: 300ms;
+}
+
+.header_email--btn:hover {
+    background-color: rgb(60, 13, 153);
+}
+
+.header_customer--title {
+    margin-top: 80px;
+    color: rgb(160, 174, 192);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+@media (max-width: 1280px) {
+    .header__customers {
+        padding-right: 64px;
+    }
+}
+
+.header__customers {
+    margin-top: 16px;
+    opacity: 0.5;
+}
+
+img {
+    width: 100%;
+}
+
+@media (max-width: 1280px) {
+    .header_img {
+        max-width: 512px;
+    }
+}
+
+.header_img {
+    width: 100%;
+}
 
 /* 
 
@@ -227,6 +371,81 @@ FEATURES ↓
     align-items: center;
 }
 
+.container {
+    padding: 96px 0px;
+}
+
+.row__narrow {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0px auto;
+}
+
+.section_tag {
+    font-size: 16px;
+    color: rgb(100, 21, 255);
+    letter-spacing: 1.6px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#features .section_title {
+    text-align: center;
+}
+
+.section_title {
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(36, 62, 99);
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+    margin: 16px 0px;
+}
+
+#features .section_para {
+    text-align: center;
+    max-width: 576px;
+}
+
+.section_para {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(124, 139, 161);
+    line-height: 1.625;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.feature {
+    width: calc(33.3333%);
+}
+
+.feature_row {
+    display: flex;
+    align-items: flex-start;
+    padding: 32px 24px;
+}
+
+.feature_img--wrapper {
+    display: flex;
+    padding: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(229, 231, 235);
+    border-image: initial;
+    border-radius: 500px;
+}
+
+.feature_img {
+    width: 24px;
+    height: 24px;
+}
+
+
 
 /* 
 
@@ -241,6 +460,85 @@ QUALITY WORK ↓
     align-items: center;
 }
 
+#quality .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+.quality_description, .quality_img--wrapper {
+    width: 50%;
+}
+
+.quality_description {
+    max-width: 576px;
+    margin-right: 64px;
+}
+
+.section_tag {
+    font-size: 16px;
+    color: rgb(100, 21, 255);
+    letter-spacing: 1.6px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#quality .section_title, #values .section_title {
+    line-height: 1.25;
+}
+
+.section_title {
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(36, 62, 99);
+    letter-spacing: 0.025em;
+    margin: 16px 0px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(124, 139, 161);
+    line-height: 1.625;
+}
+
+#quality .btn {
+    margin-top: 32px;
+}
+
+.btn:hover {
+    background-color: rgb(80, 17, 204);
+}
+
+.btn {
+    background-color: rgb(100, 21, 255);
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px 32px;
+    border-width: medium;
+    border-style: none;
+    border-color: currentColor;
+    border-image: initial;
+    border-radius: 500px;
+    transition: 300ms;
+}
+
+.quality_img {
+    z-index: 1;
+}
+
+img {
+    width: 100%;
+}
+
 
 /* 
 
@@ -253,6 +551,67 @@ STEPS ↓
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.steps_img {
+    z-index: 2;
+}
+
+img {
+    width: 100;
+}
+
+.steps_description {
+    padding: 32px 0px 32px 64px;
+}
+
+.steps_description, .steps_img--wrapper {
+    width: 50%;
+}
+
+.section_tag {
+    font-size: 16px;
+    color: rgb(100, 21, 255);
+    letter-spacing: 1.6px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section_title {
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(36, 62, 99);
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+    margin: 16px 0px;
+}
+
+.step {
+   display: flex;
+   align-items: flex-start;
+   margin-top: 32px;
+}
+
+.step_number {
+    color: rgb(203, 213, 224);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.step_title {
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(36, 62, 99);
+    line-height: 1;
+}
+
+.step_para {
+    font-size: 14px;
+    color: rgb(113, 128, 150);
+    margin-top: 12px;
+    font-weight: 500;
+    line-height: 2;
 }
 
 
