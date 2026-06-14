@@ -983,15 +983,28 @@ TESTIMONIALS ↓
 
 
 #testimonials .row {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.testimontials_img {
+.testimonials_img {
   width: 50%;
 }
 
+@media (max-width: 1280px) {
+    .testimonial_description {
+        width: calc(100%-40%);
+    }
+}
+
 .testimonial_description {
-  width: 40%
+    display: flex;
+    flex-direction: column;
+    padding-left: 64px;
 }
 
 .testimonial_profile .testimonial_img {
@@ -999,10 +1012,36 @@ TESTIMONIALS ↓
     border-radius: 50%;
 }
 
-#testimonials .row {
-  align-items: center;
-  justify-content: space-between;
+#testimonials .section_title {
+    margin-bottom: 24px;
+    line-height: 1.25;
 }
+
+.section_para {
+    font-size: 18px;
+    font-weight: 500;
+    color: #7c8ba1;
+    line-height: 1.625;
+}
+
+.testimonial_rating {
+    color: rgba(246, 173, 85);
+    margin-right: 2px;
+    margin-top: 4px;
+}
+
+.fa-brands:before, .fa-regular:before, 
+.fa-solid:before, .fab:before, .far:before,
+.fas:before {
+    content: var(--fa);
+}
+
+.fas {
+    font-family: "font awesome 5 pro";
+    font-weight: 900;
+}
+
+
 
 
 
