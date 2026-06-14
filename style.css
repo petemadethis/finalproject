@@ -1234,6 +1234,11 @@ footer {
     align-items: center;
 }
 
+.footer_logo {
+    display: flex;
+    align-items: center;
+}
+
 .footer_logo--img {
     height: 52px;
     width: 52px;
@@ -1243,14 +1248,29 @@ footer {
     font-size: 40px;
     color: #f7fafc;
     font-weight: 900;
-    margin-left: 12px;
+    margin-left: 10px;
     letter-spacing: 0.05em;
 }
 
 .footer_copyright {
     color: #cbd5e0;
     font-weight: 500;
+    margin: 0 120px;
 }
+
+
+.footer_social--link {
+    margin-left: 16px;
+    padding: 8px;
+    background: #f7fafc;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
 /* 
 
 MOBILE RESPONSIVENESS ↓
