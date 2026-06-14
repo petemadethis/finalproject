@@ -1255,16 +1255,25 @@ footer {
 .footer_copyright {
     color: #cbd5e0;
     font-weight: 500;
-    margin: 0 120px;
+    margin: 0 220px;
 }
 
+.footer_socials {
+    display: flex;
+    align-items: center;
+    margin-left: -16px;
+    
+    
+
+}
 
 .footer_social--link {
     margin-left: 16px;
     padding: 8px;
-    background: #f7fafc;
+    color: #f7fafc;
     display: flex;
     justify-content: center;
+    background-color: #f7fafc;
     border-radius: 50%;
     z-index: 2;
     cursor: pointer;
