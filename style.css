@@ -1216,6 +1216,22 @@ footer {
     line-height: 1.5;
 }
 
+.footer_column--link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    transition: all 300ms ease;
+    opacity: 0;
+}
+
+.footer_column--link:hover:after {
+    opacity: 1;
+}
+
 .footer_column--link {
     color: #f7fafc;
     font-size: 24px;
@@ -1250,7 +1266,7 @@ footer {
 }
 
 .footer_logo--text {
-    font-size: 40px;
+    font-size: 20px;
     color: #f7fafc;
     font-weight: 900;
     margin-left: 10px;
@@ -1270,6 +1286,10 @@ footer {
     
     
 
+}
+
+.footer_social--link:hover {
+    background-color: rgba(203, 213, 224);
 }
 
 .footer_social--link {
