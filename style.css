@@ -1253,6 +1253,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 
 .footer_logo {
