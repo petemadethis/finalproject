@@ -164,19 +164,11 @@ a {
     filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg) brightness(94%) contrast(115%);
 }
 
+/* hide modal by default*/ 
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 378px;
-    margin: 24px 16px;
-    padding: 32px;
-    background-color: #fff;
-    border: 1px solid rgb(229, 231, 235);
-    border-radius: 8px;
-    z-index: 4;
-    transition: all 300ms ease;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
 }
 
 .modal__links {
@@ -205,16 +197,19 @@ a {
     border: none;
 }
 
+ /* show modal when open */
 .menu--open .modal {
     visibility: visible;
     opacity: 1;
     transform: translateX(0);
 }
 
+
+/* fix close position */
 .btn__menu--close {
-    position: fixed;
-    top: 24px;
-    right: 18px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
 }
 
 
