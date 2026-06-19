@@ -365,6 +365,7 @@ img {
 
 .header_img {
   width: 100%;
+  max-width: 768px;
 }
 
 }
@@ -1153,6 +1154,10 @@ MOBILE RESPONSIVENESS ↓
 @media (max-width: 1280px) {
   header .row {
     align-items: flex-end;
+  }
+
+  .header_img {
+    max-width: 512px;
   }
 }
 
